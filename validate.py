@@ -45,7 +45,7 @@ UA = {"User-Agent": "nps-air-directory/2.0 (open-source AIR program index)"}
 TIMEOUT = 25
 SLEEP = 0.4
 
-AIR_RE = re.compile(r"artist\S{0,2}[\s\-]*in[\s\-]*residen", re.IGNORECASE)
+AIR_RE = re.compile(r"artist\S{0,2}[\s\-_]*in[\s\-_]*residen", re.IGNORECASE)
 INACTIVE_PHRASES = [
     "not currently accepting", "not accepting applications", "currently on hold",
     "on pause", "paused", "suspended", "on hiatus", "discontinued",
@@ -300,6 +300,16 @@ def partners(data):
 
 # ------------------------------------------------------------------ discover
 
+SITEMAP_INDEX = "https://www.nps.gov/sitemap.xml"
+PROBE_PATTERNS = [
+    "getinvolved/artist-in-residence.htm",
+    "getinvolved/artist-in-residence-program.htm",
+    "getinvolved/artistinresidence.htm",
+    "getinvolved/air.htm",
+    "getinvolved/supportyourpark/artist-in-residence-program.htm",
+]
+
+
 def fetch_all_units(api_key):
     units, start = [], 0
     while True:
@@ -314,25 +324,66 @@ def fetch_all_units(api_key):
     return units
 
 
-def scan_unit_for_air(code):
-    html, err = fetch(f"https://www.nps.gov/{code}/siteindex.htm")
+def is_air_url(url):
+    """Program-page candidates only: skip news/blog posts and artist profiles."""
+    path = urlparse(url).path.lower()
+    if "/learn/news/" in path or "/blogs/" in path:
+        return False
+    return bool(AIR_RE.search(path)) or path.endswith("/air.htm")
+
+
+def sitemap_air_pages():
+    """Every AIR-looking page URL on nps.gov via the XML sitemaps (~6 requests).
+
+    Park siteindex.htm pages are rendered client-side (empty to a plain GET),
+    but the sitemaps list every published page with a lastmod date.
+    Returns {url: lastmod}.
+    """
+    xml, err = fetch(SITEMAP_INDEX)
     if err:
-        return []
-    parser = LinkParser()
-    try:
-        parser.feed(html)
-    except Exception:
-        return []
-    hits = []
-    for href, text in parser.links:
-        if not href:
+        print(f"  ! sitemap index: {err}")
+        return {}
+    children = re.findall(r"<loc>\s*(https://www\.nps\.gov/sitemap/[^<\s]+)\s*</loc>", xml)
+    pages = {}
+    for sm in children:
+        if "trails" in sm:
             continue
-        if AIR_RE.search(href) or AIR_RE.search(text):
-            if href.startswith("/"):
-                href = "https://www.nps.gov" + href
-            if href.startswith("https://www.nps.gov"):
-                hits.append((href, text))
-    return hits
+        body, err = fetch(sm)
+        if err:
+            print(f"  ! {sm}: {err}")
+            continue
+        for m in re.finditer(
+                r"<url><loc>\s*(https://www\.nps\.gov/[^<\s]+?)\s*</loc>"
+                r"(?:<lastmod>([^<]+)</lastmod>)?", body):
+            u, lastmod = m.group(1), m.group(2) or None
+            if is_air_url(u):
+                pages[u] = (lastmod or "")[:10] or None
+    return pages
+
+
+def pick_url(urls):
+    """Prefer the program page: getinvolved section, artist-named file, shortest."""
+    def score(u):
+        p = urlparse(u).path.lower()
+        leaf = p.rstrip("/").rsplit("/", 1)[-1]
+        return (0 if "getinvolved" in p else 1,
+                0 if "artist" in leaf else 1,
+                len(p))
+    return sorted(urls, key=score)[0]
+
+
+def probe_unit(code):
+    """Fallback: try known URL patterns directly (guards against soft-404 redirects)."""
+    for pat in PROBE_PATTERNS:
+        url = f"https://www.nps.gov/{code}/{pat}"
+        try:
+            r = get(url, allow_redirects=True)
+        except requests.RequestException:
+            continue
+        if r.status_code == 200 and "artist" in r.url.lower() \
+                and AIR_RE.search(strip_html(r.text)):
+            return r.url
+    return None
 
 
 def discover(data):
@@ -341,19 +392,22 @@ def discover(data):
         sys.exit("discover requires NPS_API_KEY (free: nps.gov/subjects/developer)")
     print("Enumerating all NPS units via Data API...")
     units = fetch_all_units(api_key)
-    print(f"  {len(units)} units. Scanning site indexes for AIR pages...")
+    unit_meta = {u.get("parkCode", "").lower(): u for u in units if u.get("parkCode")}
+    print(f"  {len(unit_meta)} units. Scanning nps.gov sitemaps for AIR pages...")
+
+    pages = sitemap_air_pages()
+    by_unit = {}
+    for u in pages:
+        code = urlparse(u).path.strip("/").split("/")[0].lower()
+        if code in unit_meta:
+            by_unit.setdefault(code, []).append(u)
+    print(f"  {len(pages)} AIR pages across {len(by_unit)} units.")
+
     by_code = {p["unit_code"]: p for p in data["programs"]}
     added = updated = 0
-    for i, u in enumerate(units, 1):
-        code = u.get("parkCode", "").lower()
-        if not code:
-            continue
-        if i % 50 == 0:
-            print(f"  ...{i}/{len(units)}")
-        hits = scan_unit_for_air(code)
-        if not hits:
-            continue
-        url = hits[0][0]
+    for code, urls in sorted(by_unit.items()):
+        url = pick_url(urls)
+        lastmod = pages.get(url)
         if code in by_code:
             p = by_code[code]
             if not p.get("url"):
@@ -361,19 +415,33 @@ def discover(data):
                 updated += 1
             elif p.get("status") == "broken" and p["url"] != url:
                 p["notes"] = (p.get("notes") or "") + f" crawler candidate: {url}"
+            if lastmod:
+                p["page_lastmod"] = lastmod
         else:
-            entry = {"unit_code": code, "name": u.get("fullName", code),
-                     "designation": u.get("designation") or "NPS Unit",
-                     "states": (u.get("states") or "").split(","),
-                     "url": url, "partner": None, "status": "unverified",
-                     "last_verified": None, "source": "crawler",
-                     "notes": f"found via site index: {hits[0][1]}",
-                     "application": None}
-            data["programs"].append(entry)
-            by_code[code] = entry
+            meta = unit_meta[code]
+            data["programs"].append({
+                "unit_code": code, "name": meta.get("fullName", code),
+                "designation": meta.get("designation") or "NPS Unit",
+                "states": (meta.get("states") or "").split(","),
+                "url": url, "partner": None, "status": "unverified",
+                "last_verified": None, "source": "crawler",
+                "notes": "found via nps.gov sitemap",
+                "page_lastmod": lastmod, "application": None})
+            by_code[code] = data["programs"][-1]
             added += 1
+
+    # Pattern-probe seeds the sitemap didn't cover
+    probed = 0
+    for p in data["programs"]:
+        if p.get("url"):
+            continue
+        hit = probe_unit(p["unit_code"])
+        if hit:
+            p["url"], p["source"] = hit, "crawler-probe"
+            probed += 1
     data["meta"]["last_full_crawl"] = date.today().isoformat()
-    print(f"Discovery done: {added} new programs, {updated} URLs filled in.")
+    print(f"Discovery done: {added} new programs, {updated} URLs filled, "
+          f"{probed} found by pattern probe.")
 
 
 def main():
