@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artist-in-Residence Directory — National Park Service Units</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..900&family=Bitter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1a18; --stock:#e9e7e0; --stock-deep:#dedbd1;
+    --stamp:#2f567c; --open:#2e5c40; --alert:#a03a2e; --pending:#6d685e; --rule:#b9b5a9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--stock);color:var(--ink);font-family:'Bitter',Georgia,serif;font-size:15px;line-height:1.5}
+
+  .band{background:var(--ink);color:var(--stock);padding:34px 5vw 30px;border-bottom:6px solid var(--ink)}
+  .band .kicker{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#b6b2a6;margin-bottom:10px}
+  .band h1{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:80%;font-size:clamp(30px,5vw,58px);line-height:.98;text-transform:uppercase;max-width:15ch}
+  .band .sub{margin-top:14px;max-width:60ch;color:#cfccc2;font-size:14px}
+  .bandrow{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+
+  .stamp{--c:var(--stamp);width:118px;height:118px;border:2.5px solid var(--c);border-radius:50%;position:relative;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--c);
+    font-family:'IBM Plex Mono',monospace;text-transform:uppercase;text-align:center;flex:none;
+    transform:rotate(-7deg);animation:thunk .45s cubic-bezier(.2,1.6,.4,1) both;
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .93 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+    mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .93 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .stamp::after{content:"";position:absolute;inset:6px;border:1px solid var(--c);border-radius:50%}
+  .stamp .s-top,.stamp .s-bot{font-size:8.5px;letter-spacing:.12em}
+  .stamp .s-date{font-size:14px;font-weight:600;letter-spacing:.04em}
+  @keyframes thunk{from{transform:rotate(-7deg) scale(1.35);opacity:0}to{transform:rotate(-7deg) scale(1);opacity:1}}
+  @media (prefers-reduced-motion: reduce){.stamp{animation:none}}
+
+  main{padding:0 5vw 90px;max-width:1240px}
+
+  .rail{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:22px 0 14px;border-bottom:2px solid var(--ink)}
+  .rail input[type=search]{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:9px 12px;border:1.5px solid var(--ink);background:#fff;min-width:min(280px,100%);color:var(--ink)}
+  .rail select{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:9px 8px;border:1.5px solid var(--ink);background:#fff;color:var(--ink)}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+  .chip.open-chip{border-color:var(--open);color:var(--open);font-weight:600}
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--stock)}
+  .chip.open-chip[aria-pressed="true"]{background:var(--open);border-color:var(--open);color:#fff}
+  .chip:focus-visible,.rail input:focus-visible,.rail select:focus-visible,.row:focus-visible,a:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  .count{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--pending)}
+  .count b{color:var(--open)}
+
+  .legend{display:flex;gap:18px;flex-wrap:wrap;padding:12px 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pending);border-bottom:1px solid var(--rule)}
+  .legend i{display:inline-block;width:9px;height:9px;margin-right:6px;transform:translateY(.5px)}
+
+  .row{display:grid;grid-template-columns:60px 1fr 150px 108px 92px;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--rule);padding:12px 4px;cursor:pointer;font:inherit;color:inherit}
+  .row:hover{background:var(--stock-deep)}
+  .code{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--pending);align-self:baseline;padding-top:2px}
+  .pname{font-family:'Archivo',sans-serif;font-weight:700;font-stretch:88%;font-size:16.5px;line-height:1.15}
+  .pmeta{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--pending);letter-spacing:.03em;margin-top:2px}
+  .due{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+  .due-open{color:var(--open)}
+  .due-soon{color:var(--alert)}
+  .due-upcoming{color:var(--stamp)}
+  .due-closed,.due-none{color:var(--pending);font-weight:400}
+  .status{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:3px 7px;border:1.5px solid;justify-self:start;white-space:nowrap}
+  .st-verified{color:var(--stamp);border-color:var(--stamp)}
+  .st-unverified{color:var(--pending);border-color:var(--pending);border-style:dashed}
+  .st-inactive{color:var(--alert);border-color:var(--alert)}
+  .st-broken{color:var(--alert);border-color:var(--alert);background:repeating-linear-gradient(45deg,transparent 0 4px,rgba(160,58,46,.12) 4px 8px)}
+  .pdate{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pending);text-align:right}
+
+  .detail{display:none;border-bottom:1px solid var(--rule);background:var(--stock-deep);padding:16px 4px 18px 78px;font-size:13.5px}
+  .detail.open{display:block}
+  .detail a{color:var(--stamp);word-break:break-all}
+  .detail .dl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--pending);margin-top:10px;margin-bottom:2px}
+  .detail .dl:first-child{margin-top:0}
+  .detail .ev{border-left:3px solid var(--rule);padding-left:10px;font-style:italic;color:#4c483f}
+  .applybtn{display:inline-block;margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;background:var(--open);color:#fff !important;text-decoration:none}
+
+  .empty{padding:48px 0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--pending)}
+  footer{border-top:6px solid var(--ink);margin-top:60px;padding-top:16px;font-size:12.5px;color:var(--pending);max-width:70ch}
+  footer a{color:var(--stamp)}
+
+  @media (max-width:820px){
+    .row{grid-template-columns:1fr 110px;grid-template-rows:auto auto auto;padding:14px 4px}
+    .code{display:none}
+    .pname{grid-column:1}
+    .status{grid-row:1;grid-column:2;justify-self:end}
+    .due{grid-column:1}
+    .pdate{display:none}
+    .detail{padding-left:4px}
+  }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="bandrow">
+    <div>
+      <p class="kicker">Independent index &middot; National Park Service units</p>
+      <h1>Artist-in-Residence Directory</h1>
+      <p class="sub">Open calls first, sorted by deadline. A weekly crawler scans every NPS unit, re-checks each program page, and extracts application windows — including calls that route through CaFE, Submittable, NPAF, or AIRIE.</p>
+    </div>
+    <div class="stamp" id="bigStamp" role="img" aria-label="Last full validation date">
+      <span class="s-top">Last full</span>
+      <span class="s-date" id="stampDate">—</span>
+      <span class="s-bot">Validation</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="rail" role="search">
+    <button class="chip open-chip" id="openChip" aria-pressed="false">Open now</button>
+    <input type="search" id="q" placeholder="Search park, code, state…" aria-label="Search programs">
+    <select id="state" aria-label="Filter by state"><option value="">All states</option></select>
+    <select id="desig" aria-label="Filter by designation"><option value="">All designations</option></select>
+    <button class="chip" data-status="verified" aria-pressed="false">Verified</button>
+    <button class="chip" data-status="unverified" aria-pressed="false">Unverified</button>
+    <button class="chip" data-status="inactive" aria-pressed="false">Inactive</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--open)"></i>Open call — deadline shown</span>
+    <span><i style="background:var(--stamp)"></i>Verified page</span>
+    <span><i style="border:1.5px dashed var(--pending)"></i>Unverified — pending crawl</span>
+    <span><i style="background:var(--alert)"></i>Inactive / broken</span>
+  </div>
+
+  <div id="list" role="list"></div>
+  <footer>
+    <p>Data seeded from the <a href="https://www.nps.gov/subjects/arts/air.htm">NPS Arts in the Parks program</a> and individual park sites, maintained by a weekly crawler that scans all ~470 NPS unit site indexes, re-checks every program page, and machine-extracts application windows (with the supporting quote shown per record). Extraction can misread a page — the evidence line and source link are there so you can confirm before applying. Not affiliated with the National Park Service.</p>
+  </footer>
+</main>
+
+<script>
+const FALLBACK = /*__DATA__*/{
+  "meta": {
+    "generated": "2026-07-26",
+    "last_full_crawl": null,
+    "note": "Entries with status 'unverified' pending automated verification. 'application' is machine-extracted each crawl; confirm on the source page before applying."
+  },
+  "programs": [
+    {
+      "unit_code": "acad",
+      "name": "Acadia National Park",
+      "designation": "National Park",
+      "states": [
+        "ME"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "apis",
+      "name": "Apostle Islands National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "WI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "azru",
+      "name": "Aztec Ruins National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "badl",
+      "name": "Badlands National Park",
+      "designation": "National Park",
+      "states": [
+        "SD"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "band",
+      "name": "Bandelier National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "bibe",
+      "name": "Big Bend National Park",
+      "designation": "National Park",
+      "states": [
+        "TX"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "buff",
+      "name": "Buffalo National River",
+      "designation": "National River",
+      "states": [
+        "AR"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "care",
+      "name": "Capitol Reef National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "chcu",
+      "name": "Chaco Culture National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "crmo",
+      "name": "Craters of the Moon National Monument & Preserve",
+      "designation": "National Monument",
+      "states": [
+        "ID"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "cuva",
+      "name": "Cuyahoga Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "OH"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "deva",
+      "name": "Death Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "CA",
+        "NV"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "dena",
+      "name": "Denali National Park & Preserve",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "deto",
+      "name": "Devils Tower National Monument",
+      "designation": "National Monument",
+      "states": [
+        "WY"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "drto",
+      "name": "Dry Tortugas National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "ever",
+      "name": "Everglades National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "url": null,
+      "partner": "AIRIE (Artists in Residence in Everglades)",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "foun",
+      "name": "Fort Union National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "gett",
+      "name": "Gettysburg National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "PA"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "glac",
+      "name": "Glacier National Park",
+      "designation": "National Park",
+      "states": [
+        "MT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "grca",
+      "name": "Grand Canyon National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "hale",
+      "name": "Haleakalā National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "havo",
+      "name": "Hawaiʻi Volcanoes National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "heho",
+      "name": "Herbert Hoover National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "IA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "home",
+      "name": "Homestead National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NE"
+      ],
+      "url": "https://www.nps.gov/home/getinvolved/supportyourpark/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "hosp",
+      "name": "Hot Springs National Park",
+      "designation": "National Park",
+      "states": [
+        "AR"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "indu",
+      "name": "Indiana Dunes National Park",
+      "designation": "National Park",
+      "states": [
+        "IN"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "isro",
+      "name": "Isle Royale National Park",
+      "designation": "National Park",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "jotr",
+      "name": "Joshua Tree National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "katm",
+      "name": "Katmai National Park & Preserve",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "lavo",
+      "name": "Lassen Volcanic National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "maca",
+      "name": "Mammoth Cave National Park",
+      "designation": "National Park",
+      "states": [
+        "KY"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "mabi",
+      "name": "Marsh-Billings-Rockefeller National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "meve",
+      "name": "Mesa Verde National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "noca",
+      "name": "North Cascades National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "olym",
+      "name": "Olympic National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "url": "https://www.nps.gov/olym/getinvolved/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "pefo",
+      "name": "Petrified Forest National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "piro",
+      "name": "Pictured Rocks National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "redw",
+      "name": "Redwood National and State Parks",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": "https://www.nps.gov/redw/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "romo",
+      "name": "Rocky Mountain National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "saga",
+      "name": "Saint-Gaudens National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NH"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "slbe",
+      "name": "Sleeping Bear Dunes National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "voya",
+      "name": "Voyageurs National Park",
+      "designation": "National Park",
+      "states": [
+        "MN"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "wefa",
+      "name": "Weir Farm National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "CT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "whis",
+      "name": "Whiskeytown National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "yell",
+      "name": "Yellowstone National Park",
+      "designation": "National Park",
+      "states": [
+        "WY",
+        "MT",
+        "ID"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "yose",
+      "name": "Yosemite National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "zion",
+      "name": "Zion National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    }
+  ]
+}/*__END__*/;
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const el = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+const shortDate = iso => { if(!iso) return ""; const d=new Date(iso+"T12:00:00");
+  return isNaN(d)?iso:d.toLocaleDateString("en-US",{month:"short",day:"numeric"}) + (d.getFullYear()!==new Date().getFullYear()?" "+d.getFullYear():""); };
+const daysUntil = iso => { if(!iso) return null; return Math.round((new Date(iso+"T12:00:00")-Date.now())/864e5); };
+
+let DATA=null; const active=new Set(); let openOnly=false;
+
+function dueInfo(p){
+  const a=p.application;
+  if(!a) return {cls:"due-none",label:"—",rank:3,key:9e9};
+  const dl=daysUntil(a.deadline), op=daysUntil(a.opens);
+  if(a.accepting===true && a.deadline && dl!==null && dl>=0)
+    return {cls:dl<=14?"due-soon":"due-open",label:"Due "+shortDate(a.deadline),rank:0,key:dl};
+  if(a.accepting===true) return {cls:"due-open",label:"Open now",rank:0,key:8e8};
+  if(op!==null && op>0) return {cls:"due-upcoming",label:"Opens "+shortDate(a.opens),rank:1,key:op};
+  if(a.accepting===false) return {cls:"due-closed",label:a.next_expected?"Closed · reopens":"Closed",rank:4,key:9e9};
+  return {cls:"due-none",label:"—",rank:3,key:9e9};
+}
+
+async function boot(){
+  try{ const r=await fetch("data.json",{cache:"no-store"}); if(!r.ok) throw 0; DATA=await r.json(); }
+  catch(e){ DATA=FALLBACK; }
+  if(!DATA){ document.getElementById("list").innerHTML='<p class="empty">No data.json found and no embedded fallback.</p>'; return; }
+
+  const dates=DATA.programs.map(p=>p.last_verified).filter(Boolean).sort();
+  const stamp=DATA.meta?.last_full_crawl || dates[dates.length-1] || null;
+  document.getElementById("stampDate").textContent = stamp ? stamp.replaceAll("-"," ") : "PENDING";
+  if(!stamp) document.getElementById("bigStamp").style.setProperty("--c","var(--pending)");
+
+  const sSel=document.getElementById("state"), dSel=document.getElementById("desig");
+  [...new Set(DATA.programs.flatMap(p=>p.states))].sort().forEach(s=>sSel.append(new Option(s,s)));
+  [...new Set(DATA.programs.map(p=>p.designation))].sort().forEach(d=>dSel.append(new Option(d,d)));
+
+  ["q","state","desig"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+  document.querySelectorAll(".chip[data-status]").forEach(c=>c.addEventListener("click",()=>{
+    const s=c.dataset.status; active.has(s)?active.delete(s):active.add(s);
+    c.setAttribute("aria-pressed",active.has(s)); render();
+  }));
+  const oc=document.getElementById("openChip");
+  oc.addEventListener("click",()=>{ openOnly=!openOnly; oc.setAttribute("aria-pressed",openOnly); render(); });
+  render();
+}
+
+function render(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const st=document.getElementById("state").value;
+  const dg=document.getElementById("desig").value;
+  const list=document.getElementById("list"); list.innerHTML="";
+
+  const openTotal=DATA.programs.filter(p=>p.application?.accepting===true).length;
+
+  const shown=DATA.programs.filter(p=>{
+    if(openOnly && p.application?.accepting!==true) return false;
+    if(st && !p.states.includes(st)) return false;
+    if(dg && p.designation!==dg) return false;
+    const eff=p.status==="broken"?"inactive":p.status;
+    if(active.size && !active.has(eff)) return false;
+    if(q){
+      const hay=(p.name+" "+p.unit_code+" "+p.states.join(" ")+" "+(p.partner||"")).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  }).map(p=>[p,dueInfo(p)])
+    .sort((A,B)=> A[1].rank-B[1].rank || A[1].key-B[1].key || A[0].name.localeCompare(B[0].name));
+
+  document.getElementById("count").innerHTML =
+    "<b>"+openTotal+" open</b> &middot; "+shown.length+" / "+DATA.programs.length+" shown";
+  if(!shown.length){ list.append(el("p","empty",openOnly?"No open calls on record yet — run the crawler, or clear the filter.":"No programs match. Clear a filter.")); return; }
+
+  shown.forEach(([p,d])=>{
+    const a=p.application||{};
+    const row=el("button","row");
+    row.setAttribute("role","listitem"); row.setAttribute("aria-expanded","false");
+    row.innerHTML =
+      '<span class="code">'+esc(p.unit_code)+'</span>'+
+      '<span><span class="pname">'+esc(p.name)+'</span><div class="pmeta">'+esc(p.designation)+' &middot; '+esc(p.states.join(", "))+'</div></span>'+
+      '<span class="due '+d.cls+'">'+esc(d.label)+'</span>'+
+      '<span class="status st-'+esc(p.status)+'">'+esc(p.status)+'</span>'+
+      '<span class="pdate">'+esc(p.last_verified||"—")+'</span>';
+    const applyUrl=a.apply_url||p.url;
+    const det=el("div","detail");
+    det.innerHTML =
+      ((a.period_text||a.deadline||a.accepting!=null)?
+        '<p class="dl">Application window</p><p>'+esc(a.period_text||d.label)+
+        (a.next_expected?' &middot; '+esc(a.next_expected):'')+'</p>'+
+        (a.accepting===true&&applyUrl?'<p><a class="applybtn" href="'+esc(applyUrl)+'" target="_blank" rel="noopener">Apply'+(a.apply_via?' via '+esc(a.apply_via):'')+'</a></p>':'')+
+        (a.evidence?'<p class="dl">Source quote</p><p class="ev">&ldquo;'+esc(a.evidence)+'&rdquo;</p>':'')
+        :'<p class="dl">Application window</p><p>Not yet extracted — pending crawl.</p>')+
+      '<p class="dl">Program page</p><p>'+(p.url?'<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.url)+'</a>':'Not yet located — pending crawler discovery')+'</p>'+
+      (p.partner?'<p class="dl">Partner organization</p><p>'+esc(p.partner)+'</p>':'')+
+      (p.notes?'<p class="dl">Validator notes</p><p>'+esc(p.notes)+'</p>':'')+
+      '<p class="dl">Record</p><p>source: '+esc(p.source)+' &middot; last verified: '+esc(p.last_verified||"—")+
+      (a.extracted?' &middot; extracted: '+esc(a.extracted)+' ('+esc(a.method||"")+')':'')+'</p>';
+    row.addEventListener("click",()=>{ const open=det.classList.toggle("open"); row.setAttribute("aria-expanded",open); });
+    list.append(row,det);
+  });
+}
+boot();
+</script>
+</body>
+</html>

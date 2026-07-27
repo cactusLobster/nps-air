@@ -1,0 +1,717 @@
+{
+  "meta": {
+    "generated": "2026-07-26",
+    "last_full_crawl": null,
+    "note": "Entries with status 'unverified' pending automated verification. 'application' is machine-extracted each crawl; confirm on the source page before applying."
+  },
+  "programs": [
+    {
+      "unit_code": "acad",
+      "name": "Acadia National Park",
+      "designation": "National Park",
+      "states": [
+        "ME"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "apis",
+      "name": "Apostle Islands National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "WI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "azru",
+      "name": "Aztec Ruins National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "badl",
+      "name": "Badlands National Park",
+      "designation": "National Park",
+      "states": [
+        "SD"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "band",
+      "name": "Bandelier National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "bibe",
+      "name": "Big Bend National Park",
+      "designation": "National Park",
+      "states": [
+        "TX"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "buff",
+      "name": "Buffalo National River",
+      "designation": "National River",
+      "states": [
+        "AR"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "care",
+      "name": "Capitol Reef National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "chcu",
+      "name": "Chaco Culture National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "crmo",
+      "name": "Craters of the Moon National Monument & Preserve",
+      "designation": "National Monument",
+      "states": [
+        "ID"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "cuva",
+      "name": "Cuyahoga Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "OH"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "deva",
+      "name": "Death Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "CA",
+        "NV"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "dena",
+      "name": "Denali National Park & Preserve",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "deto",
+      "name": "Devils Tower National Monument",
+      "designation": "National Monument",
+      "states": [
+        "WY"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "drto",
+      "name": "Dry Tortugas National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "ever",
+      "name": "Everglades National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "url": null,
+      "partner": "AIRIE (Artists in Residence in Everglades)",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "foun",
+      "name": "Fort Union National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "gett",
+      "name": "Gettysburg National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "PA"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "glac",
+      "name": "Glacier National Park",
+      "designation": "National Park",
+      "states": [
+        "MT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "grca",
+      "name": "Grand Canyon National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "hale",
+      "name": "Haleakalā National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "havo",
+      "name": "Hawaiʻi Volcanoes National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "url": null,
+      "partner": "National Parks Arts Foundation",
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "heho",
+      "name": "Herbert Hoover National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "IA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "home",
+      "name": "Homestead National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NE"
+      ],
+      "url": "https://www.nps.gov/home/getinvolved/supportyourpark/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "hosp",
+      "name": "Hot Springs National Park",
+      "designation": "National Park",
+      "states": [
+        "AR"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "indu",
+      "name": "Indiana Dunes National Park",
+      "designation": "National Park",
+      "states": [
+        "IN"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "isro",
+      "name": "Isle Royale National Park",
+      "designation": "National Park",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "jotr",
+      "name": "Joshua Tree National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "katm",
+      "name": "Katmai National Park & Preserve",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "lavo",
+      "name": "Lassen Volcanic National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "maca",
+      "name": "Mammoth Cave National Park",
+      "designation": "National Park",
+      "states": [
+        "KY"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "mabi",
+      "name": "Marsh-Billings-Rockefeller National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "meve",
+      "name": "Mesa Verde National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "noca",
+      "name": "North Cascades National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "olym",
+      "name": "Olympic National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "url": "https://www.nps.gov/olym/getinvolved/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "pefo",
+      "name": "Petrified Forest National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "piro",
+      "name": "Pictured Rocks National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "redw",
+      "name": "Redwood National and State Parks",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": "https://www.nps.gov/redw/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-26",
+      "source": "nps_search",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "romo",
+      "name": "Rocky Mountain National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "saga",
+      "name": "Saint-Gaudens National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NH"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "slbe",
+      "name": "Sleeping Bear Dunes National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "voya",
+      "name": "Voyageurs National Park",
+      "designation": "National Park",
+      "states": [
+        "MN"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "wefa",
+      "name": "Weir Farm National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "CT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "whis",
+      "name": "Whiskeytown National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "yell",
+      "name": "Yellowstone National Park",
+      "designation": "National Park",
+      "states": [
+        "WY",
+        "MT",
+        "ID"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "yose",
+      "name": "Yosemite National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    },
+    {
+      "unit_code": "zion",
+      "name": "Zion National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "url": null,
+      "partner": null,
+      "status": "unverified",
+      "last_verified": null,
+      "source": "seed",
+      "notes": "",
+      "application": null
+    }
+  ]
+}
