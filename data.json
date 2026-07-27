@@ -12,13 +12,52 @@
       "states": [
         "ME"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/acad/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "submittable",
+        "next_expected": null,
+        "evidence": "We're currently reviewing plans for Acadia's Artist-in-Residence program in 2026.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-09-24"
+    },
+    {
+      "unit_code": "agfo",
+      "name": "Agate Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NE"
+      ],
+      "url": "https://www.nps.gov/agfo/getinvolved/supportyourpark/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-01-07",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Email the park to express your interest in the Agate Fossil Beds National Monument AiR Program.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "apis",
@@ -57,13 +96,25 @@
       "states": [
         "SD"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/badl/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-01",
+        "deadline": "2027-06-15",
+        "period_text": "Applications accepted until June 15 annually",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": "2027-01-01",
+        "evidence": "The application deadline is June 15th. Submissions will be reviewed in July of each year.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-03-26"
     },
     {
       "unit_code": "band",
@@ -72,13 +123,25 @@
       "states": [
         "NM"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/band/getinvolved/artist-in-residence-program.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
-      "notes": "",
-      "application": null
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"currently on hold\"",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "The Bandelier National Monument Artist-in-Residence Program is currently on hold.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-04-28"
     },
     {
       "unit_code": "bibe",
@@ -87,21 +150,77 @@
       "states": [
         "TX"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/bibe/getinvolved/artist-in-residence-program.htm",
       "partner": "National Parks Arts Foundation",
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
+      "application": {
+        "accepting": false,
+        "opens": "2025-12-01",
+        "deadline": "2026-01-31",
+        "period_text": "December 1, 2025 - January 31, 2026",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Applications for the 2026 Artist in Residence program will be accepted from December 1, 2025 - January 31, 2026",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-11-20"
+    },
+    {
+      "unit_code": "bicy",
+      "name": "Big Cypress National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "FL"
+      ],
+      "url": "https://www.nps.gov/bicy/getinvolved/supportyourpark/past-artist-in-residence-participants.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2017-06-14",
       "application": {
         "accepting": false,
         "opens": null,
         "deadline": null,
         "period_text": null,
         "apply_url": null,
-        "apply_via": "partner",
+        "apply_via": null,
         "next_expected": null,
-        "evidence": "Big Bend National Park listed but no application details provided on page",
+        "evidence": "Page shows only past participants from 2004-2017, no current application information provided.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "bica",
+      "name": "Bighorn Canyon National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "MT",
+        "WY"
+      ],
+      "url": "https://www.nps.gov/bica/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-11-29",
+      "application": {
+        "accepting": false,
+        "opens": "2025-12-02",
+        "deadline": "2026-01-31",
+        "period_text": "December 2, 2025 to January 31, 2026",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Request for applications for the 2026 program open December 2, 2025 and will remain open until January 31, 2026.",
         "extracted": "2026-07-27",
         "method": "llm"
       }
@@ -122,19 +241,193 @@
       "application": null
     },
     {
+      "unit_code": "cana",
+      "name": "Canaveral National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "FL"
+      ],
+      "url": "https://www.nps.gov/cana/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-02-18",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Dani Ferreira Amaro announced as 2025 artist-in-residence; residency Feb 24–Mar 31, 2025 already occurred.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "cakr",
+      "name": "Cape Krusenstern National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AK"
+      ],
+      "url": "https://www.nps.gov/cakr/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-12-12",
+      "application": {
+        "accepting": false,
+        "opens": "2026-12-01",
+        "deadline": "2027-03-02",
+        "period_text": "winter applications for summer trips",
+        "apply_url": "https://www.voicesofthewilderness.org",
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "Trips normally during summer or early fall, with applications accepted during winter.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "calo",
+      "name": "Cape Lookout National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "NC"
+      ],
+      "url": "https://www.nps.gov/calo/getinvolved/supportyourpark/artists-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-07-05",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": "https://www.volunteer.gov",
+        "apply_via": "volunteer.gov",
+        "next_expected": null,
+        "evidence": "When the application window closes, a panel of judges will select three artists.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
       "unit_code": "care",
       "name": "Capitol Reef National Park",
       "designation": "National Park",
       "states": [
         "UT"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/care/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"suspended\"",
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "submittable",
+        "next_expected": null,
+        "evidence": "All applications must be completed online through the CallForEntry.org website",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-01-04"
+    },
+    {
+      "unit_code": "cavo",
+      "name": "Capulin Volcano National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": "https://www.nps.gov/cavo/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "page_lastmod": "2026-03-05",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Program on Hold For 2026. We are currently working on a new program and have decided to not take applications for 2026.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "cave",
+      "name": "Carlsbad Caverns National Park",
+      "designation": "National Park",
+      "states": [
+        "NM"
+      ],
+      "url": "https://www.nps.gov/cave/getinvolved/carlsbad-caverns-national-park-artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-01-15",
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-17",
+        "deadline": "2027-03-06",
+        "period_text": "January 17 - March 6",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Application Opens: Saturday, January 17. Application Closes: Friday, March 6",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "cato",
+      "name": "Catoctin Mountain Park",
+      "designation": "Park",
+      "states": [
+        "MD"
+      ],
+      "url": "https://www.nps.gov/cato/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-03-29",
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "To learn more or to apply, visit the Catoctin Forest Alliance website.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "chcu",
@@ -152,19 +445,112 @@
       "application": null
     },
     {
+      "unit_code": "cham",
+      "name": "Chamizal National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "TX"
+      ],
+      "url": "https://www.nps.gov/cham/getinvolved/air.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-02-20",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": "2026-07-31",
+        "period_text": "July 1st-July 31st, 2026",
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Applications will be accepted July 1st-July 31st, 2026.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "chir",
+      "name": "Chiricahua National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "url": "https://www.nps.gov/chir/getinvolved/supportyourpark/2014-artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2015-02-24",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Last updated: February 24, 2015",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "ciro",
+      "name": "City Of Rocks National Reserve",
+      "designation": "National Reserve",
+      "states": [
+        "ID"
+      ],
+      "url": "https://www.nps.gov/ciro/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-11-18",
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-09",
+        "deadline": "2027-01-09",
+        "period_text": "Applications due the 2nd Saturday in January annually",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": "2027-01-09",
+        "evidence": "Applications are due the 2nd Saturday in January of the year applying for.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
       "unit_code": "crmo",
       "name": "Craters of the Moon National Monument & Preserve",
       "designation": "National Monument",
       "states": [
         "ID"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/crmo/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
-      "notes": "",
-      "application": null
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"has ended\"",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "The 2024 Artist-in-Residence application period has ended.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2024-02-24"
     },
     {
       "unit_code": "cuva",
@@ -273,6 +659,61 @@
       "application": null
     },
     {
+      "unit_code": "gate",
+      "name": "Gateway National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "NY",
+        "NJ"
+      ],
+      "url": "https://www.nps.gov/gate/getinvolved/artist-in-residence-heather-heckel-phd.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-07-09",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": null,
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "gewa",
+      "name": "George Washington Birthplace National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VA"
+      ],
+      "url": "https://www.nps.gov/gewa/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-01-22",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": "2024-03-08",
+        "period_text": "2024 season applications",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Applications for 2024 are open. The application deadline for 2024: March 8, 2024",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
       "unit_code": "gett",
       "name": "Gettysburg National Military Park",
       "designation": "National Military Park",
@@ -294,13 +735,25 @@
       "states": [
         "MT"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/glac/getinvolved/current-artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "There is no current Artist-in-Residence.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-04-09"
     },
     {
       "unit_code": "grca",
@@ -316,6 +769,115 @@
       "source": "seed",
       "notes": "",
       "application": null
+    },
+    {
+      "unit_code": "para",
+      "name": "Grand Canyon-Parashant National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "url": "https://www.nps.gov/para/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2022-10-18",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "At this time we are not accepting new applications.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "grba",
+      "name": "Great Basin National Park",
+      "designation": "National Park",
+      "states": [
+        "NV"
+      ],
+      "url": "https://www.nps.gov/grba/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-09-11",
+      "application": {
+        "accepting": false,
+        "opens": "2026-09-01",
+        "deadline": "2026-10-15",
+        "period_text": "September 1 to October 15 annually",
+        "apply_url": null,
+        "apply_via": "submittable",
+        "next_expected": "2026-09-01",
+        "evidence": "Applications for the Great Basin National Park Artist-in-Residence are handled on CallForEntry.org. The application period is from September 1 - October 15.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "grsm",
+      "name": "Great Smoky Mountains National Park",
+      "designation": "National Park",
+      "states": [
+        "NC",
+        "TN"
+      ],
+      "url": "https://www.nps.gov/grsm/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-06-10",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Apply to be an Artist-in-Residence section header present with no application details provided",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "gumo",
+      "name": "Guadalupe Mountains National Park",
+      "designation": "National Park",
+      "states": [
+        "TX"
+      ],
+      "url": "https://www.nps.gov/gumo/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-01-16",
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "For further information, or to apply, contact the park by email or phone at: AIR Coordinator",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "hale",
@@ -354,13 +916,25 @@
       "states": [
         "IA"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/heho/getinvolved/supportyourpark/artist-in-residence-program.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Herbert Hoover NHS will not be having an Artist in Residence in 2026.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-01-08"
     },
     {
       "unit_code": "home",
@@ -379,14 +953,31 @@
         "accepting": false,
         "opens": null,
         "deadline": "2026-01-31",
-        "period_text": "2026 program with January 31, 2026 deadline",
+        "period_text": "2026 program with January 31 deadline",
         "apply_url": null,
-        "apply_via": "volunteer.gov",
+        "apply_via": "submittable",
         "next_expected": null,
         "evidence": "2026 Artist-in-Residence (AIR) Program (DEADLINE January 31, 2026)",
         "extracted": "2026-07-27",
         "method": "llm"
-      }
+      },
+      "page_lastmod": "2025-12-04"
+    },
+    {
+      "unit_code": "hobe",
+      "name": "Horseshoe Bend National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "AL"
+      ],
+      "url": "https://www.nps.gov/hobe/getinvolved/supportyourpark/copy-of-artist-in-residence-program.htm",
+      "partner": null,
+      "status": "broken",
+      "last_verified": null,
+      "source": "crawler",
+      "notes": "page no longer mentions artist-in-residence (possible redirect)",
+      "page_lastmod": "2015-04-14",
+      "application": null
     },
     {
       "unit_code": "hosp",
@@ -395,13 +986,52 @@
       "states": [
         "AR"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/hosp/getinvolved/supportyourpark/2015-artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Page displays 2015 Artist in Residence results; no current application information provided.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2021-01-30"
+    },
+    {
+      "unit_code": "hutr",
+      "name": "Hubbell Trading Post National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AZ"
+      ],
+      "url": "https://www.nps.gov/hutr/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-07-09",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "will tentatively pause the Artist in Residence Program at this time",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "indu",
@@ -410,13 +1040,25 @@
       "states": [
         "IN"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/indu/getinvolved/supportyourpark/2017-artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Page describes 2017 Artist-in-Residence program with past participants; no current application information provided.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2018-10-01"
     },
     {
       "unit_code": "isro",
@@ -425,13 +1067,79 @@
       "states": [
         "MI"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/isro/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-02",
+        "deadline": "2027-02-16",
+        "period_text": "January 2 through February 16 annually",
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": "2027-01-02",
+        "evidence": "Each year, the application period is open January 2 through February 16.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-12-11"
+    },
+    {
+      "unit_code": "joda",
+      "name": "John Day Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "OR"
+      ],
+      "url": "https://www.nps.gov/joda/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"not accepting applications\"",
+      "page_lastmod": "2025-09-20",
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-01",
+        "deadline": null,
+        "period_text": "Applications expected to reopen in 2027",
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": "2027",
+        "evidence": "We are not accepting applications for 2026. Please watch this page for application updates in 2027.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "jofi",
+      "name": "John Fitzgerald Kennedy National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "url": "https://www.nps.gov/jofi/artist-in-residency.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-06-19",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Dr. Heather Heckel will visit from July 23–26 to create original artworks.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "jotr",
@@ -440,13 +1148,25 @@
       "states": [
         "CA"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/jotr/getinvolved/supportyourpark/artist-in-residence-audio-video.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": null,
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-01-03"
     },
     {
       "unit_code": "katm",
@@ -464,19 +1184,85 @@
       "application": null
     },
     {
+      "unit_code": "klse",
+      "name": "Klondike Gold Rush - Seattle Unit National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "WA"
+      ],
+      "url": "https://www.nps.gov/klse/getinvolved/youth-artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-09-23",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Email us for more information! Youth Artist Khushi's collage explores the impact of the Klondike Gold Rush on Seattle.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "kova",
+      "name": "Kobuk Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "url": "https://www.nps.gov/kova/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-12-12",
+      "application": {
+        "accepting": false,
+        "opens": "2026-12-01",
+        "deadline": "2027-03-02",
+        "period_text": "winter application window for summer/early fall trips",
+        "apply_url": null,
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "Applications for Summer 2025 are due by March 2nd, 2025. Learn more and apply through Voices of the Wilderness.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
       "unit_code": "lavo",
       "name": "Lassen Volcanic National Park",
       "designation": "National Park",
       "states": [
         "CA"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/lavo/getinvolved/supportyourpark/air.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2026-10-01",
+        "deadline": "2026-10-31",
+        "period_text": "October 1 - October 31 annually",
+        "apply_url": "https://www.volunteer.gov",
+        "apply_via": "partner",
+        "next_expected": "2026-10-01",
+        "evidence": "Applications are accepted through October 31 of the preceding year. Lassen will not host AIR in 2025.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-04-30"
     },
     {
       "unit_code": "maca",
@@ -500,13 +1286,25 @@
       "states": [
         "VT"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/mabi/getinvolved/artist-in-residence-program.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Applications are currently closed.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-03-24"
     },
     {
       "unit_code": "meve",
@@ -515,13 +1313,106 @@
       "states": [
         "CO"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/meve/getinvolved/artists_in_residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "For more information about the Artist-in-Residence Program, please use this link to email the Mesa Verde Association.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-06-11"
+    },
+    {
+      "unit_code": "moca",
+      "name": "Montezuma Castle National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "url": "https://www.nps.gov/moca/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"not accepting applications\"",
+      "page_lastmod": "2025-03-12",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "park",
+        "next_expected": null,
+        "evidence": "The park is currentley NOT accepting applications.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "nebe",
+      "name": "New Bedford Whaling National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "url": "https://www.nps.gov/nebe/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-09-02",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": "opens annually",
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Our call for artists residencies opens annually. When the call is live it can be found here.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "noat",
+      "name": "Noatak National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "url": "https://www.nps.gov/noat/getinvolved/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-12-12",
+      "application": {
+        "accepting": false,
+        "opens": "2026-12-01",
+        "deadline": "2027-03-02",
+        "period_text": "December through March annually",
+        "apply_url": null,
+        "apply_via": "partner",
+        "next_expected": "December 2026",
+        "evidence": "Applications are typically open December through March for the following summer",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "noca",
@@ -559,7 +1450,35 @@
         "apply_url": null,
         "apply_via": "email",
         "next_expected": null,
-        "evidence": "Applications for the Summer Residency are due by March 13, 2026. Application closed.",
+        "evidence": "Applications for the Summer Residency are due by March 13, 2026 at 4:30 PM PST. Application closed",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-03-16"
+    },
+    {
+      "unit_code": "orca",
+      "name": "Oregon Caves National Monument & Preserve",
+      "designation": "National Monument & Preserve",
+      "states": [
+        "OR"
+      ],
+      "url": "https://www.nps.gov/orca/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-01-22",
+      "application": {
+        "accepting": false,
+        "opens": "2026-09-01",
+        "deadline": null,
+        "period_text": "Fall 2026, early September through end of October",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": "Fall 2026",
+        "evidence": "The Artist-in-Residence program will not be offered this spring, 2026. We hope that it will return in the fall.",
         "extracted": "2026-07-27",
         "method": "llm"
       }
@@ -571,13 +1490,25 @@
       "states": [
         "AZ"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/pefo/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
-      "notes": "",
-      "application": null
+      "status": "inactive",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "page says: \"on hiatus\"",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": "program on hiatus during 2025 construction project",
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "In 2025, due to a large construction project, the Artist-in-Residence program will be on hiatus.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2025-02-11"
     },
     {
       "unit_code": "piro",
@@ -586,13 +1517,52 @@
       "states": [
         "MI"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/piro/getinvolved/supportyourpark/artist-in-residence-gallery.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": null,
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2015-04-10"
+    },
+    {
+      "unit_code": "pinn",
+      "name": "Pinnacles National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "url": "https://www.nps.gov/pinn/learn/photosmultimedia/air.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2015-03-01",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "No applications are being accepted at this time.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "redw",
@@ -611,14 +1581,15 @@
         "accepting": false,
         "opens": "2027-06-01",
         "deadline": "2027-06-15",
-        "period_text": "June 1st-15th annually",
+        "period_text": "June 1-15 annually",
         "apply_url": "https://www.redwoodparksconservancy.org/artist-in-residence-program",
         "apply_via": "partner",
         "next_expected": "2027-06-01",
         "evidence": "Fall 2026 Program Submission Window: June 1st-15th, 2026",
         "extracted": "2026-07-27",
         "method": "llm"
-      }
+      },
+      "page_lastmod": "2026-06-08"
     },
     {
       "unit_code": "romo",
@@ -627,13 +1598,25 @@
       "states": [
         "CO"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/romo/getinvolved/artist-in-residence-program.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Applications for 2026 are no longer being accepted.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-05-27"
     },
     {
       "unit_code": "saga",
@@ -642,13 +1625,106 @@
       "states": [
         "NH"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/saga/learn/historyculture/artist-in-residence-programs.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "The page does not state whether applications are currently open or provide application dates.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2024-02-27"
+    },
+    {
+      "unit_code": "sapu",
+      "name": "Salinas Pueblo Missions National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "url": "https://www.nps.gov/sapu/getinvolved/artists-in-residence-2025.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-04-28",
+      "application": {
+        "accepting": false,
+        "opens": "2025-05-01",
+        "deadline": "2025-05-16",
+        "period_text": "May 1 – May 16, 2025",
+        "apply_url": null,
+        "apply_via": "submittable",
+        "next_expected": null,
+        "evidence": "The application period is open May 1 – May 16, 2025.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "saan",
+      "name": "San Antonio Missions National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "TX"
+      ],
+      "url": "https://www.nps.gov/saan/learn/historyculture/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2025-08-28",
+      "application": {
+        "accepting": false,
+        "opens": "2025-06-30",
+        "deadline": "2025-07-18",
+        "period_text": "June 30 - July 18, 2025",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Applications open June 30, 2025 and close July 18, 2025",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "shen",
+      "name": "Shenandoah National Park",
+      "designation": "National Park",
+      "states": [
+        "VA"
+      ],
+      "url": "https://www.nps.gov/shen/getinvolved/supportyourpark/artist-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-04-24",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "2026 Shenandoah National Park has selected seven artists for its annual Artist-in-Residence program.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "slbe",
@@ -657,13 +1733,133 @@
       "states": [
         "MI"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/slbe/learn/management/artistinresidence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Lakeshore is taking an indefinite pause in the Artist-in-Residence program.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2024-10-04"
+    },
+    {
+      "unit_code": "stri",
+      "name": "Stones River National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "TN"
+      ],
+      "url": "https://www.nps.gov/stri/getinvolved/air.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-03-29",
+      "application": {
+        "accepting": false,
+        "opens": "2027-09-01",
+        "deadline": "2027-10-31",
+        "period_text": "September 1 - October 31 annually",
+        "apply_url": null,
+        "apply_via": "park",
+        "next_expected": "2027-09-01",
+        "evidence": "Applications for the 2025 Artist in Residence Program will be accepted from September 1 - October 31, 2024.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "tapr",
+      "name": "Tallgrass Prairie National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "KS"
+      ],
+      "url": "https://www.nps.gov/tapr/getinvolved/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2024-06-07",
+      "application": {
+        "accepting": null,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "For more information and to sign up for email updates, please visit: TallgrassArtistResidency.org",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "tuzi",
+      "name": "Tuzigoot National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "url": "https://www.nps.gov/tuzi/getinvolved/current-and-past-artists-in-residence.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2019-03-14",
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": null,
+        "next_expected": null,
+        "evidence": "Last updated: March 14, 2019",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
+    },
+    {
+      "unit_code": "vall",
+      "name": "Valles Caldera National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "NM"
+      ],
+      "url": "https://www.nps.gov/vall/getinvolved/artist-in-residence-program.htm",
+      "partner": null,
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
+      "notes": "",
+      "page_lastmod": "2026-03-31",
+      "application": {
+        "accepting": false,
+        "opens": "2027-03-01",
+        "deadline": "2027-03-15",
+        "period_text": "March 1-15, 2027",
+        "apply_url": "https://www.volunteer.gov",
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "Application period is open from March 1-15, 2027.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "voya",
@@ -687,13 +1883,25 @@
       "states": [
         "CT"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/wefa/getinvolved/artist-in-residence-program.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2026-11-01",
+        "deadline": "2027-01-31",
+        "period_text": "November 1 to January 31 each year",
+        "apply_url": null,
+        "apply_via": "park",
+        "next_expected": "2026-11-01",
+        "evidence": "Call for Artists runs from November 1 to January 31 each year",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-02-13"
     },
     {
       "unit_code": "whis",
@@ -702,13 +1910,25 @@
       "states": [
         "CA"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/whis/getinvolved/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2027-01-01",
+        "deadline": "2027-02-20",
+        "period_text": "January and February for spring residencies",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": "2027-01-01",
+        "evidence": "call for artists happens in January and February for that spring's residencies",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-01-13"
     },
     {
       "unit_code": "yell",
@@ -749,13 +1969,25 @@
       "states": [
         "UT"
       ],
-      "url": null,
+      "url": "https://www.nps.gov/zion/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
-      "status": "unverified",
-      "last_verified": null,
-      "source": "seed",
+      "status": "verified",
+      "last_verified": "2026-07-27",
+      "source": "crawler",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2027-06-01",
+        "deadline": null,
+        "period_text": "summer of 2027",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": "2027-06-01",
+        "evidence": "Applications for 2028 will open in summer of 2027.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      },
+      "page_lastmod": "2026-06-03"
     }
   ]
 }
