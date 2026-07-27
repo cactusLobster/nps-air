@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-07-26",
-    "last_full_crawl": null,
+    "last_full_crawl": "2026-07-27",
     "note": "Entries with status 'unverified' pending automated verification. 'application' is machine-extracted each crawl; confirm on the source page before applying."
   },
   "programs": [
@@ -93,7 +93,18 @@
       "last_verified": null,
       "source": "seed",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": null,
+        "period_text": null,
+        "apply_url": null,
+        "apply_via": "partner",
+        "next_expected": null,
+        "evidence": "Big Bend National Park listed but no application details provided on page",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "buff",
@@ -361,10 +372,21 @@
       "url": "https://www.nps.gov/home/getinvolved/supportyourpark/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-07-26",
+      "last_verified": "2026-07-27",
       "source": "nps_search",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": "2026-01-31",
+        "period_text": "2026 program with January 31, 2026 deadline",
+        "apply_url": null,
+        "apply_via": "volunteer.gov",
+        "next_expected": null,
+        "evidence": "2026 Artist-in-Residence (AIR) Program (DEADLINE January 31, 2026)",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "hosp",
@@ -526,10 +548,21 @@
       "url": "https://www.nps.gov/olym/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-07-26",
+      "last_verified": "2026-07-27",
       "source": "nps_search",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": null,
+        "deadline": "2026-03-13",
+        "period_text": "Applications due by March 13, 2026 at 4:30 PM PST for Summer Residency",
+        "apply_url": null,
+        "apply_via": "email",
+        "next_expected": null,
+        "evidence": "Applications for the Summer Residency are due by March 13, 2026. Application closed.",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "pefo",
@@ -571,10 +604,21 @@
       "url": "https://www.nps.gov/redw/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-07-26",
+      "last_verified": "2026-07-27",
       "source": "nps_search",
       "notes": "",
-      "application": null
+      "application": {
+        "accepting": false,
+        "opens": "2027-06-01",
+        "deadline": "2027-06-15",
+        "period_text": "June 1st-15th annually",
+        "apply_url": "https://www.redwoodparksconservancy.org/artist-in-residence-program",
+        "apply_via": "partner",
+        "next_expected": "2027-06-01",
+        "evidence": "Fall 2026 Program Submission Window: June 1st-15th, 2026",
+        "extracted": "2026-07-27",
+        "method": "llm"
+      }
     },
     {
       "unit_code": "romo",
@@ -691,7 +735,7 @@
         "CA"
       ],
       "url": null,
-      "partner": null,
+      "partner": "National Parks Arts Foundation",
       "status": "unverified",
       "last_verified": null,
       "source": "seed",
