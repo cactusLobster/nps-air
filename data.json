@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-07-26",
-    "last_full_crawl": "2026-08-10",
+    "last_full_crawl": "2026-08-17",
     "note": "Entries with status 'unverified' pending automated verification. 'application' is machine-extracted each crawl; confirm on the source page before applying."
   },
   "programs": [
@@ -15,7 +15,7 @@
       "url": "https://www.nps.gov/acad/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -27,7 +27,7 @@
         "apply_via": "submittable",
         "next_expected": null,
         "evidence": "We're currently reviewing plans for Acadia's Artist-in-Residence program in 2026.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-09-24"
@@ -42,7 +42,7 @@
       "url": "https://www.nps.gov/agfo/getinvolved/supportyourpark/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-07-22",
@@ -55,7 +55,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Email the park to express your interest in the Agate Fossil Beds National Monument AiR Program.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -99,19 +99,19 @@
       "url": "https://www.nps.gov/badl/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
         "accepting": false,
         "opens": "2027-01-01",
         "deadline": "2027-06-15",
-        "period_text": "Applications accepted between January 1 and June 15 annually",
+        "period_text": "Applications accepted until June 15 annually",
         "apply_url": null,
         "apply_via": "email",
         "next_expected": "2027-01-01",
         "evidence": "The application deadline is June 15th. Applications must be postmarked by the deadline.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-03-26"
@@ -126,7 +126,7 @@
       "url": "https://www.nps.gov/band/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"currently on hold\"",
       "application": {
@@ -138,7 +138,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "The Bandelier National Monument Artist-in-Residence Program is currently on hold.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-04-28"
@@ -153,19 +153,19 @@
       "url": "https://www.nps.gov/bibe/getinvolved/artist-in-residence-program.htm",
       "partner": "National Parks Arts Foundation",
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
         "accepting": false,
         "opens": "2025-12-01",
         "deadline": "2026-01-31",
-        "period_text": "December 1, 2025 - January 31, 2026",
+        "period_text": "December 1, 2025 to January 31, 2026",
         "apply_url": null,
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Applications for the 2026 Artist in Residence program will be accepted from December 1, 2025 - January 31, 2026",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-11-20"
@@ -180,7 +180,7 @@
       "url": "https://www.nps.gov/bicy/getinvolved/supportyourpark/past-artist-in-residence-participants.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2017-06-14",
@@ -192,8 +192,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Page shows only past participants from 2004-2017, no current program information",
-        "extracted": "2026-08-10",
+        "evidence": "Last updated: June 14, 2017",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -208,7 +208,7 @@
       "url": "https://www.nps.gov/bica/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-11-29",
@@ -221,7 +221,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Request for applications for the 2026 program open December 2, 2025 and will remain open until January 31, 2026.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -250,7 +250,7 @@
       "url": "https://www.nps.gov/cana/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-02-18",
@@ -262,8 +262,8 @@
         "apply_url": null,
         "apply_via": "partner",
         "next_expected": null,
-        "evidence": "2025 artist-in-residence already announced; program managed by Atlantic Center for the Arts",
-        "extracted": "2026-08-10",
+        "evidence": "2025 artist-in-residence Dani Ferreira Amaro announced; residency Feb 24 – Mar 31, 2025",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -277,7 +277,7 @@
       "url": "https://www.nps.gov/cakr/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-12-12",
@@ -285,12 +285,12 @@
         "accepting": false,
         "opens": "2026-12-01",
         "deadline": "2027-03-02",
-        "period_text": "winter application window for summer trips",
-        "apply_url": null,
+        "period_text": "winter applications for summer trips",
+        "apply_url": "https://www.voicesofthewilderness.org",
         "apply_via": "partner",
-        "next_expected": null,
-        "evidence": "Trips normally during summer or early fall, with applications accepted during the winter.",
-        "extracted": "2026-08-10",
+        "next_expected": "2026-12-01",
+        "evidence": "Applications for Summer 2025 are due by March 2nd, 2025. Trips normally during summer or early fall, with applications accepted during the winter.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -304,7 +304,7 @@
       "url": "https://www.nps.gov/calo/getinvolved/supportyourpark/artists-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-07-05",
@@ -317,7 +317,7 @@
         "apply_via": "volunteer.gov",
         "next_expected": null,
         "evidence": null,
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -331,7 +331,7 @@
       "url": "https://www.nps.gov/care/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"suspended\"",
       "application": {
@@ -339,12 +339,12 @@
         "opens": null,
         "deadline": null,
         "period_text": null,
-        "apply_url": null,
+        "apply_url": "https://www.callforentry.org",
         "apply_via": "submittable",
         "next_expected": null,
         "evidence": "All applications must be completed online through the CallForEntry.org website",
-        "extracted": "2026-08-10",
-        "method": "llm"
+        "extracted": "2026-08-17",
+        "method": "llm+hop"
       },
       "page_lastmod": "2025-01-04"
     },
@@ -358,7 +358,7 @@
       "url": "https://www.nps.gov/cavo/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-03-05",
@@ -371,7 +371,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "Program on Hold For 2026. We are currently working on a new program and have decided to not take applications for 2026.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -385,7 +385,7 @@
       "url": "https://www.nps.gov/cave/getinvolved/carlsbad-caverns-national-park-artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-01-15",
@@ -398,7 +398,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Application Opens: Saturday, January 17. Application Closes: Friday, March 6",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -412,7 +412,7 @@
       "url": "https://www.nps.gov/cato/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-03-29",
@@ -424,8 +424,8 @@
         "apply_url": null,
         "apply_via": "partner",
         "next_expected": null,
-        "evidence": "To learn more or to apply, visit the Catoctin Forest Alliance website.",
-        "extracted": "2026-08-10",
+        "evidence": "To apply, visit the Catoctin Forest Alliance website.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -454,7 +454,7 @@
       "url": "https://www.nps.gov/cham/getinvolved/air.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-02-20",
@@ -462,12 +462,12 @@
         "accepting": false,
         "opens": "2027-07-01",
         "deadline": "2027-07-31",
-        "period_text": "July 1st-July 31st",
+        "period_text": "July 1-31 annually",
         "apply_url": null,
         "apply_via": null,
         "next_expected": "2027-07-01",
         "evidence": "Applications will be accepted July 1st-July 31st, 2026.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -481,7 +481,7 @@
       "url": "https://www.nps.gov/chir/getinvolved/supportyourpark/2014-artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2015-02-24",
@@ -494,7 +494,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "Last updated: February 24, 2015",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -508,7 +508,7 @@
       "url": "https://www.nps.gov/ciro/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-11-18",
@@ -516,12 +516,12 @@
         "accepting": false,
         "opens": "2027-01-09",
         "deadline": "2027-01-09",
-        "period_text": "Applications due the 2nd Saturday in January",
+        "period_text": "Applications due the 2nd Saturday in January annually",
         "apply_url": null,
         "apply_via": "email",
         "next_expected": "2027-01-09",
         "evidence": "Applications are due the 2nd Saturday in January of the year applying for.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -535,7 +535,7 @@
       "url": "https://www.nps.gov/crmo/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"has ended\"",
       "application": {
@@ -547,7 +547,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "The 2024 Artist-in-Residence application period has ended.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2024-02-24"
@@ -680,7 +680,7 @@
       "url": "https://www.nps.gov/gate/getinvolved/artist-in-residence-heather-heckel-phd.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-07-09",
@@ -692,8 +692,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "announces their Artist-in-Residence for the 2026 season. Heather Heckel, PhD, is an artist",
-        "extracted": "2026-08-10",
+        "evidence": "Gateway National Recreation Area announces their Artist-in-Residence for the 2026 season. Heather Heckel, PhD, is an artist",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -707,7 +707,7 @@
       "url": "https://www.nps.gov/gewa/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-01-22",
@@ -720,7 +720,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Applications for 2024 are open. The application deadline for 2024: March 8, 2024",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -749,11 +749,11 @@
       "url": "https://www.nps.gov/glac/getinvolved/current-artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
-        "accepting": false,
+        "accepting": null,
         "opens": null,
         "deadline": null,
         "period_text": null,
@@ -761,7 +761,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "There is no current Artist-in-Residence.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-04-09"
@@ -791,7 +791,7 @@
       "url": "https://www.nps.gov/para/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2022-10-18",
@@ -804,7 +804,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "At this time we are not accepting new applications.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -818,7 +818,7 @@
       "url": "https://www.nps.gov/grba/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-09-11",
@@ -830,8 +830,8 @@
         "apply_url": null,
         "apply_via": "submittable",
         "next_expected": "2026-09-01",
-        "evidence": "Application period is from September 1 - October 15. Applications submitted in any other format will not be considered.",
-        "extracted": "2026-08-10",
+        "evidence": "Applications for the Great Basin National Park Artist-in-Residence are handled on CallForEntry.org. The application period is from September 1 - October 15.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -846,7 +846,7 @@
       "url": "https://www.nps.gov/grsm/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-06-10",
@@ -859,7 +859,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": null,
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -873,7 +873,7 @@
       "url": "https://www.nps.gov/gumo/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-01-16",
@@ -885,8 +885,8 @@
         "apply_url": null,
         "apply_via": "email",
         "next_expected": null,
-        "evidence": "Applying artists must submit materials electronically to our Artist In Residence Coordinator with AIR in subject line.",
-        "extracted": "2026-08-10",
+        "evidence": "Applying artists must submit materials electronically to our Artist In Residence Coordinator",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -930,7 +930,7 @@
       "url": "https://www.nps.gov/heho/getinvolved/supportyourpark/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -942,7 +942,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "Herbert Hoover NHS will not be having an Artist in Residence in 2026.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-01-08"
@@ -957,7 +957,7 @@
       "url": "https://www.nps.gov/home/getinvolved/supportyourpark/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "nps_search",
       "notes": "",
       "application": {
@@ -969,7 +969,7 @@
         "apply_via": "volunteer.gov",
         "next_expected": null,
         "evidence": "2026 Artist-in-Residence (AIR) Program (DEADLINE January 31, 2026)",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-12-04"
@@ -1000,7 +1000,7 @@
       "url": "https://www.nps.gov/hosp/getinvolved/supportyourpark/2015-artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1011,8 +1011,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Page shows 2015 Artist in Residence with past residencies listed through 2017.",
-        "extracted": "2026-08-10",
+        "evidence": "2015 Artist in Residence page shows past residency; no current application information provided",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2021-01-30"
@@ -1027,7 +1027,7 @@
       "url": "https://www.nps.gov/hutr/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-07-09",
@@ -1035,12 +1035,12 @@
         "accepting": false,
         "opens": null,
         "deadline": null,
-        "period_text": "program paused",
+        "period_text": null,
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
         "evidence": "will tentatively pause the Artist in Residence Program at this time",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1054,7 +1054,7 @@
       "url": "https://www.nps.gov/indu/getinvolved/supportyourpark/2017-artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1065,8 +1065,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Page describes 2017 Artist-in-Residence program participants; last updated October 1, 2018.",
-        "extracted": "2026-08-10",
+        "evidence": "Page describes 2017 Artist-in-Residence program with past participants; last updated October 1, 2018.",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2018-10-01"
@@ -1081,7 +1081,7 @@
       "url": "https://www.nps.gov/isro/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1093,7 +1093,7 @@
         "apply_via": null,
         "next_expected": "2027-01-02",
         "evidence": "Each year, the application period is open January 2 through February 16.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-12-11"
@@ -1108,7 +1108,7 @@
       "url": "https://www.nps.gov/joda/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"not accepting applications\"",
       "page_lastmod": "2025-09-20",
@@ -1121,7 +1121,7 @@
         "apply_via": null,
         "next_expected": "2027",
         "evidence": "We are not accepting applications for 2026. Please watch this page for application updates in 2027.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1134,10 +1134,10 @@
       ],
       "url": "https://www.nps.gov/jofi/artist-in-residency.htm",
       "partner": null,
-      "status": "broken",
-      "last_verified": "2026-08-03",
+      "status": "verified",
+      "last_verified": "2026-08-17",
       "source": "crawler",
-      "notes": "page no longer mentions artist-in-residence (possible redirect)",
+      "notes": "",
       "page_lastmod": "2026-06-19",
       "application": {
         "accepting": false,
@@ -1147,8 +1147,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Award-winning artist Dr. Heather Heckel will visit July 23–26 to create artworks inspired by the site.",
-        "extracted": "2026-08-03",
+        "evidence": "Dr. Heather Heckel will visit from July 23–26 to create original artworks.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1162,11 +1162,11 @@
       "url": "https://www.nps.gov/jotr/getinvolved/supportyourpark/artist-in-residence-audio-video.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
-        "accepting": false,
+        "accepting": null,
         "opens": null,
         "deadline": null,
         "period_text": null,
@@ -1174,7 +1174,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": null,
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-01-03"
@@ -1204,7 +1204,7 @@
       "url": "https://www.nps.gov/klse/getinvolved/youth-artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-09-23",
@@ -1216,8 +1216,8 @@
         "apply_url": null,
         "apply_via": "email",
         "next_expected": null,
-        "evidence": "Email us for more information!",
-        "extracted": "2026-08-10",
+        "evidence": "Email us for more information! Youth artists (ages 14-22) create original content.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1231,7 +1231,7 @@
       "url": "https://www.nps.gov/kova/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-12-12",
@@ -1239,12 +1239,12 @@
         "accepting": false,
         "opens": "2026-12-01",
         "deadline": "2027-03-02",
-        "period_text": "winter application window",
+        "period_text": "Winter application window, typically December through March",
         "apply_url": null,
         "apply_via": "partner",
-        "next_expected": null,
-        "evidence": "Applications for Summer 2025 are due by March 2nd, 2025. apply through Voices of the Wilderness",
-        "extracted": "2026-08-10",
+        "next_expected": "Winter 2026",
+        "evidence": "Applications for Summer 2025 are due by March 2nd, 2025. Trips normally during summer or early fall, with applications accepted during the winter.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1258,19 +1258,19 @@
       "url": "https://www.nps.gov/lavo/getinvolved/supportyourpark/air.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
         "accepting": false,
-        "opens": "2027-01-01",
-        "deadline": "2027-10-31",
-        "period_text": "Applications accepted through October 31 annually",
+        "opens": "2026-10-01",
+        "deadline": "2026-10-31",
+        "period_text": "October 1 through October 31 annually",
         "apply_url": "https://www.volunteer.gov",
         "apply_via": "partner",
-        "next_expected": "2027-01-01",
-        "evidence": "Lassen Volcanic will not be hosting an Artist-in-Residence in 2025",
-        "extracted": "2026-08-10",
+        "next_expected": "2026-10-01",
+        "evidence": "Applications are accepted through October 31 of the preceding year",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-04-30"
@@ -1300,7 +1300,7 @@
       "url": "https://www.nps.gov/mabi/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1312,7 +1312,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "Applications are currently closed.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-03-24"
@@ -1327,7 +1327,7 @@
       "url": "https://www.nps.gov/meve/getinvolved/artists_in_residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1339,7 +1339,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "For more information about the Artist-in-Residence Program, please use this link to email the Mesa Verde Association.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-06-11"
@@ -1354,7 +1354,7 @@
       "url": "https://www.nps.gov/moca/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"not accepting applications\"",
       "page_lastmod": "2025-03-12",
@@ -1367,7 +1367,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "The park is currentley NOT accepting applications.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1381,7 +1381,7 @@
       "url": "https://www.nps.gov/nebe/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-09-02",
@@ -1389,12 +1389,12 @@
         "accepting": false,
         "opens": null,
         "deadline": null,
-        "period_text": "opens annually",
+        "period_text": "annual call for artists",
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
         "evidence": "Our call for artists residencies opens annually. When the call is live it can be found here.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1408,7 +1408,7 @@
       "url": "https://www.nps.gov/noat/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-12-12",
@@ -1416,12 +1416,12 @@
         "accepting": false,
         "opens": "2026-12-01",
         "deadline": "2027-03-02",
-        "period_text": "December through March",
-        "apply_url": "https://www.voicesofthewilderness.org",
+        "period_text": "December through March annually",
+        "apply_url": null,
         "apply_via": "partner",
         "next_expected": "2026-12-01",
         "evidence": "Applications are typically open December through March for the following summer",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1450,19 +1450,19 @@
       "url": "https://www.nps.gov/olym/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "nps_search",
       "notes": "",
       "application": {
         "accepting": false,
         "opens": null,
         "deadline": "2026-03-13",
-        "period_text": "Applications due by March 13, 2026 for Summer Residency (July/August 2026)",
+        "period_text": "Applications due by March 13, 2026",
         "apply_url": null,
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Application closed",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-03-16"
@@ -1477,20 +1477,20 @@
       "url": "https://www.nps.gov/orca/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-01-22",
       "application": {
         "accepting": false,
-        "opens": "2026-09-01",
+        "opens": null,
         "deadline": null,
-        "period_text": "Fall 2026, early September through end of October",
+        "period_text": "Spring 2026 not offered; fall 2026 expected",
         "apply_url": null,
         "apply_via": "email",
-        "next_expected": "Fall 2026",
+        "next_expected": "2026-09-01",
         "evidence": "The Artist-in-Residence program will not be offered this spring, 2026. We hope that it will return in the fall.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1504,19 +1504,19 @@
       "url": "https://www.nps.gov/pefo/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "inactive",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "page says: \"on hiatus\"",
       "application": {
         "accepting": false,
         "opens": null,
         "deadline": null,
-        "period_text": "program on hiatus during 2025 construction project",
+        "period_text": "program on hiatus in 2025",
         "apply_url": null,
         "apply_via": null,
-        "next_expected": null,
+        "next_expected": "2026",
         "evidence": "In 2025, due to a large construction project, the Artist-in-Residence program will be on hiatus.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2025-02-11"
@@ -1531,7 +1531,7 @@
       "url": "https://www.nps.gov/piro/getinvolved/supportyourpark/artist-in-residence-gallery.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1543,7 +1543,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": null,
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2015-04-10"
@@ -1558,7 +1558,7 @@
       "url": "https://www.nps.gov/pinn/learn/photosmultimedia/air.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2015-03-01",
@@ -1568,10 +1568,10 @@
         "deadline": null,
         "period_text": null,
         "apply_url": null,
-        "apply_via": null,
+        "apply_via": "email",
         "next_expected": null,
         "evidence": "No applications are being accepted at this time.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1585,7 +1585,7 @@
       "url": "https://www.nps.gov/redw/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "nps_search",
       "notes": "",
       "application": {
@@ -1593,11 +1593,11 @@
         "opens": "2027-06-01",
         "deadline": "2027-06-15",
         "period_text": "June 1-15 annually",
-        "apply_url": null,
+        "apply_url": "https://www.redwoodparksconservancy.org/artist-in-residence-program",
         "apply_via": "partner",
         "next_expected": "2027-06-01",
-        "evidence": "Fall 2026 Program Submission Window: June 1st-15th, 2026",
-        "extracted": "2026-08-10",
+        "evidence": "Fall 2026 Program Submission Window: June 1st-15th, 2026. Selected Artist Announcement: August 15, 2026.",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-06-08"
@@ -1612,7 +1612,7 @@
       "url": "https://www.nps.gov/romo/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1624,7 +1624,7 @@
         "apply_via": null,
         "next_expected": null,
         "evidence": "Applications for 2026 are no longer being accepted.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-05-27"
@@ -1639,7 +1639,7 @@
       "url": "https://www.nps.gov/saga/learn/historyculture/artist-in-residence-programs.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1650,8 +1650,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": null,
-        "extracted": "2026-08-10",
+        "evidence": "No application information or dates provided on page",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2024-02-27"
@@ -1666,7 +1666,7 @@
       "url": "https://www.nps.gov/sapu/getinvolved/artists-in-residence-2025.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2025-04-28",
@@ -1675,11 +1675,11 @@
         "opens": "2025-05-01",
         "deadline": "2025-05-16",
         "period_text": "May 1 – May 16, 2025",
-        "apply_url": "https://www.volunteer.gov",
-        "apply_via": "volunteer.gov",
+        "apply_url": null,
+        "apply_via": "submittable",
         "next_expected": null,
         "evidence": "The application period is open May 1 – May 16, 2025.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1693,7 +1693,7 @@
       "url": "https://www.nps.gov/saan/learn/historyculture/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-08-06",
@@ -1706,7 +1706,7 @@
         "apply_via": "email",
         "next_expected": null,
         "evidence": "Email saan_interpretation@nps.gov and include: Name, Address, Phone Number, Email",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1720,7 +1720,7 @@
       "url": "https://www.nps.gov/shen/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-04-24",
@@ -1732,8 +1732,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Shenandoah National Park has selected seven artists for its annual Artist-in-Residence program.",
-        "extracted": "2026-08-10",
+        "evidence": "2026 Shenandoah National Park Artists in Residence has selected seven artists",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1747,7 +1747,7 @@
       "url": "https://www.nps.gov/slbe/learn/management/artistinresidence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1758,8 +1758,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "the Lakeshore is taking an indefinite pause in the Artist-in-Residence program",
-        "extracted": "2026-08-10",
+        "evidence": "Lakeshore is taking an indefinite pause in the Artist-in-Residence program.",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2024-10-04"
@@ -1774,7 +1774,7 @@
       "url": "https://www.nps.gov/stri/getinvolved/air.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-03-29",
@@ -1785,9 +1785,9 @@
         "period_text": "September 1 - October 31 annually",
         "apply_url": null,
         "apply_via": "park",
-        "next_expected": null,
+        "next_expected": "2025-09-01",
         "evidence": "Applications for the 2025 Artist in Residence Program will be accepted from September 1 - October 31, 2024.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1801,7 +1801,7 @@
       "url": "https://www.nps.gov/tapr/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2024-06-07",
@@ -1810,11 +1810,11 @@
         "opens": null,
         "deadline": null,
         "period_text": null,
-        "apply_url": "https://www.tallgrassartistresidency.org",
+        "apply_url": null,
         "apply_via": "partner",
         "next_expected": null,
-        "evidence": "For more information about the artist residency program, please visit: TallgrassArtistResidency.org",
-        "extracted": "2026-08-10",
+        "evidence": "visit: TallgrassArtistResidency.org for more information about the artist residency program",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1828,7 +1828,7 @@
       "url": "https://www.nps.gov/tuzi/getinvolved/current-and-past-artists-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2019-03-14",
@@ -1840,8 +1840,8 @@
         "apply_url": null,
         "apply_via": null,
         "next_expected": null,
-        "evidence": "Last updated: March 14, 2019",
-        "extracted": "2026-08-10",
+        "evidence": "Last updated: March 14, 2019. Page lists only past artists in residence.",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1855,7 +1855,7 @@
       "url": "https://www.nps.gov/vall/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "page_lastmod": "2026-03-31",
@@ -1865,10 +1865,10 @@
         "deadline": "2027-03-15",
         "period_text": "March 1-15, 2027",
         "apply_url": null,
-        "apply_via": "volunteer.gov",
-        "next_expected": null,
+        "apply_via": "submittable",
+        "next_expected": "2027-03-01",
         "evidence": "The next application period will open March 1, 2027. Application period is open from March 1-15, 2027.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       }
     },
@@ -1897,7 +1897,7 @@
       "url": "https://www.nps.gov/wefa/getinvolved/artist-in-residence-program.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1909,7 +1909,7 @@
         "apply_via": "park",
         "next_expected": "2026-11-01",
         "evidence": "Call for Artists runs from November 1 to January 31 each year",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-02-13"
@@ -1924,19 +1924,19 @@
       "url": "https://www.nps.gov/whis/getinvolved/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
         "accepting": false,
-        "opens": "2027-01-01",
+        "opens": "2026-12-01",
         "deadline": "2027-02-20",
-        "period_text": "January and February for spring residencies",
+        "period_text": "December for spring residencies; proposals due February 20",
         "apply_url": null,
         "apply_via": "email",
-        "next_expected": "2027-01-01",
-        "evidence": "call for artists happens in January and February for that spring's residencies",
-        "extracted": "2026-08-10",
+        "next_expected": "2026-12-01",
+        "evidence": "Email proposals by February 20, 2026. Open period is month of December for spring residencies.",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-01-13"
@@ -1983,7 +1983,7 @@
       "url": "https://www.nps.gov/zion/getinvolved/supportyourpark/artist-in-residence.htm",
       "partner": null,
       "status": "verified",
-      "last_verified": "2026-08-10",
+      "last_verified": "2026-08-17",
       "source": "crawler",
       "notes": "",
       "application": {
@@ -1995,7 +1995,7 @@
         "apply_via": "email",
         "next_expected": "2027-06-01",
         "evidence": "Applications for 2028 will open in summer of 2027.",
-        "extracted": "2026-08-10",
+        "extracted": "2026-08-17",
         "method": "llm"
       },
       "page_lastmod": "2026-07-15"
